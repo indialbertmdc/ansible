@@ -13,3 +13,8 @@
   - name: voir les facts
     ansible.builtin.debug:
       var: ansible_facts
+
+  - name: utilisation de template
+    ansible.builtin.template:
+      src: readme.txt.j2
+      dest: /tmp/readme.txt
