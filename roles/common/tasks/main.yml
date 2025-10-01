@@ -1,0 +1,9 @@
+- name: utilisation de template
+  ansible.builtin.template:
+    src: readme.txt.j2
+    dest: /tmp/readme.txt
+
+- name: test de copie
+  ansible.builtin.copy:
+  src: ./test.html
+  dest: /tmp/test.html

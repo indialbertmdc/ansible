@@ -1,23 +1,25 @@
 - hosts: all
+  roles:
+   - common
   tasks:
 
   - name: est-ce que ça fonctionne
     ansible.builtin.debug:
       msg: oui !
 
-  - name: test de copie
-    ansible.builtin.copy:
-      src: ./test.html
-      dest: /tmp/test.html
-      
+#  - name: test de copie
+#    ansible.builtin.copy:
+#      src: ./test.html
+#      dest: /tmp/test.html
+#      
   - name: voir les facts
     ansible.builtin.debug:
       var: ansible_facts
 
-  - name: utilisation de template
-    ansible.builtin.template:
-      src: readme.txt.j2
-      dest: /tmp/readme.txt
+#  - name: utilisation de template
+#    ansible.builtin.template:
+#      src: readme.txt.j2
+#      dest: /tmp/readme.txt
 
   - name: lire le fichier readme.txt
     ansible.builtin.shell:
