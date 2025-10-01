@@ -5,5 +5,5 @@
 
 - name: test de copie
   ansible.builtin.copy:
-  src: ./test.html
-  dest: /tmp/test.html
+    src: ./test.html
+    dest: /tmp/test.html
