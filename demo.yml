@@ -1,5 +1,5 @@
 - hosts: all
-  tasks
+  tasks:
 
   - name: est-ce que ça fonctionne
     ansible.builtin.debug:
