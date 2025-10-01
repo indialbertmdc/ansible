@@ -15,6 +15,8 @@
   - name: voir les facts
     ansible.builtin.debug:
       var: ansible_facts
+    tags:
+      - never
 
 #  - name: utilisation de template
 #    ansible.builtin.template:
