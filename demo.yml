@@ -18,3 +18,7 @@
     ansible.builtin.template:
       src: readme.txt.j2
       dest: /tmp/readme.txt
+      
+    ansible.builtin.shell:
+      cmd: cat /tmp/readme.txt
+     
